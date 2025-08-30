@@ -71,7 +71,7 @@ def send_with_button(update, context, msg):
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    photo_path = os.path.join(os.path.dirname(__file__), "rasm/logo.jpg")
+    photo_path = os.path.join(os.path.dirname(__file__), "logo.jpg")
     
     try:
         with open(photo_path, "rb") as photo_file:
@@ -185,3 +185,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
